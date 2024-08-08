@@ -7,7 +7,13 @@ const Header = () => {
     <Fragment>
         <Navbar expand="md" bg='primary' data-bs-theme="dark" className='shadow'>
           <Container>
-            <Navbar.Brand href="/">React Projects</Navbar.Brand>
+            <Navbar.Brand>
+              <NavLink
+                  to={`counter`} 
+                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none text-white')}>
+                React Projects
+              </NavLink>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
               <Nav>
@@ -24,9 +30,9 @@ const Header = () => {
                 </NavLink>
                               
                 <NavLink 
-                  to={`aaa`} 
+                  to={`api`} 
                   className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
-                  Services
+                  MealsApi
                 </NavLink>
                                
                 <NavLink 
