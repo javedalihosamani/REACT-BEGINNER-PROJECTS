@@ -45,7 +45,13 @@ const Header = () => {
                   to={`testimonials`} 
                   className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
                   Testimonials
-                </NavLink>           
+                </NavLink>   
+
+                <NavLink 
+                  to={`accordion`} 
+                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
+                  Accordion
+                </NavLink>   
               </Nav>
             </Navbar.Collapse>
           </Container>
