@@ -10,6 +10,7 @@ import ToggleBackgroundColor from "./components/colorToggler/ToggleBackgroundCol
 import Testimonials from "./components/testimonials/Testimonials";
 import Accordion from "./components/accordions/Accordion";
 import { accordionData } from "./components/accordions/utils/content";
+import FormValidation from "./components/formValidation/FormValidation";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             path={`/accordion`}
             element={<Accordion accordion={accordionData} />}
           />
+          <Route path={`/validation`} element={<FormValidation />} />
           <Route path={`/*`} element={<Pnf />} />
         </Routes>
         <Footer />

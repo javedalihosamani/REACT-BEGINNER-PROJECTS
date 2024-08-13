@@ -51,6 +51,12 @@ const Header = () => {
                   to={`accordion`} 
                   className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
                   Accordion
+                </NavLink>
+
+                <NavLink 
+                  to={`validation`} 
+                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
+                  Form Validation
                 </NavLink>   
               </Nav>
             </Navbar.Collapse>
